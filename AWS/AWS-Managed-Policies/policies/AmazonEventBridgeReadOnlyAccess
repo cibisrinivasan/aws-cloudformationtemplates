@@ -1,0 +1,27 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "events:DescribeRule",
+                        "events:DescribeEventBus",
+                        "events:DescribeEventSource",
+                        "events:ListEventBuses",
+                        "events:ListEventSources",
+                        "events:ListRuleNamesByTarget",
+                        "events:ListRules",
+                        "events:ListTargetsByRule",
+                        "events:TestEventPattern"
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-07-11T13:59:07Z"
+    }
+}

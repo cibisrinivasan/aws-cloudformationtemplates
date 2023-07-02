@@ -1,0 +1,17 @@
+{
+	"if": {
+		"field": "type",
+		"equals": "Microsoft.SQL/servers/databases"
+	},
+	"then": {
+		"effect": "auditIfNotExists",
+		"details": {
+			"type": "Microsoft.SQL/servers/databases/auditingSettings",
+			"name": "current",
+			"existenceCondition": {
+				"field": "Microsoft.Sql/auditingSettings.state",
+				"equals": "[parameters('setting')]"
+			}
+		}
+	}
+}

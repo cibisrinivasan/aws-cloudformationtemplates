@@ -1,0 +1,30 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Action": [
+                        "s3:ListAllMyBuckets"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:s3:::*"
+                },
+                {
+                    "Action": [
+                        "acm:ListCertificates",
+                        "cloudfront:*",
+                        "iam:ListServerCertificates",
+                        "waf:ListWebACLs",
+                        "waf:GetWebACL"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2016-01-21T17:03:57Z"
+    }
+}

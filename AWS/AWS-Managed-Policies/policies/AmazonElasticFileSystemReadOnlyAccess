@@ -1,0 +1,27 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Action": [
+                        "ec2:DescribeAvailabilityZones",
+                        "ec2:DescribeNetworkInterfaceAttribute",
+                        "ec2:DescribeNetworkInterfaces",
+                        "ec2:DescribeSecurityGroups",
+                        "ec2:DescribeSubnets",
+                        "ec2:DescribeVpcAttribute",
+                        "ec2:DescribeVpcs",
+                        "elasticfilesystem:Describe*",
+                        "kms:ListAliases"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2017-08-14T10:09:49Z"
+    }
+}
