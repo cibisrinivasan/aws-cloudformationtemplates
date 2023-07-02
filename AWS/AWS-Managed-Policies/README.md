@@ -1,7 +1,3 @@
-**THIS REPO IS NO LONGER UPDATED: USE https://github.com/z0ph/aws_managed_policies**
-
----
-
 
 Collection of the AWS Managed IAM policies.  These were acquired as follows:
 
